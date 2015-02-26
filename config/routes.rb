@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'user/new'
+
+  get 'user/create'
+
+  get 'user/update'
+
+  get 'user/edit'
+
+  get 'user/destroy'
+
+  get 'user/index'
+
+  get 'user/show'
+
   get 'todos/new'
 
   get 'todos/create'
