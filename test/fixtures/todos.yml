@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyText
+  complete: MyString
+  order: 1
+  due_on: 2015-02-26
+  user_id: 1
+
+two:
+  text: MyText
+  complete: MyString
+  order: 1
+  due_on: 2015-02-26
+  user_id: 1
