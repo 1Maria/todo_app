@@ -1,2 +1,10 @@
-<h1>Todos#edit</h1>
-<p>Find me in app/views/todos/edit.html.erb</p>
+<% if current_user %>
+  Hello <%= current_user.name %>
+  <%= link_to 'Logout', logout_path %>
+<% end %>
+
+<h1>Edit Task</h1>
+<%= render 'form' %>
+
+<%= link_to 'Show', @todo %> |
+<%= link_to 'Back', todos_path %>

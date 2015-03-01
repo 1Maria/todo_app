@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  get     'signup'  => 'users#new'
-  get     'login'   => 'sessions#new'
-  post    'login'   => 'sessions#create'
-  delete  'logout'  => 'sessions#destroy'
+  get  'signup'  => 'users#new'
+  get  'login', to: 'sessions#new', as: 'login'
+  post 'login'   => 'sessions#create'
+  get  'logout', to: 'sessions#destroy', as: 'logout'
 
   resources :users
   resources :todos
