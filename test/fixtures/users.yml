@@ -2,12 +2,12 @@
 
 one:
   id: 1
-  name: MyString
-  email: MyString
-  password: MyString
+  name: Susan
+  email: susan@susan.com
+  password_digest: <%= BCrypt::Password.create("password", cost: 4) %>
 
 two:
-  id: 1
-  name: MyString
-  email: MyString
-  password: MyString
+  id: 2
+  name: Anthony
+  email: anthony@anthony.com
+  password_digest: <%= BCrypt::Password.create("password", cost: 4) %>

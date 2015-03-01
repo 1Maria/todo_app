@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  text: MyText
-  complete: MyString
+  text: Water plants
+  complete: no
   order: 1
-  due_on: 2015-02-26
-  user_id: 1
+  due_on: 2015-03-01
+  user_id: 2
 
 two:
-  text: MyText
-  complete: MyString
+  text: Make dinner
+  complete: yes
   order: 1
-  due_on: 2015-02-26
+  due_on: 2015-03-02
   user_id: 1
