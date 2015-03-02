@@ -22,11 +22,9 @@
   <tbody>
     <% @todos.each do |todo| %>
       <tr data-item-id=<%= "#{todo.id}" %> class="item">
-        <td>
-          <%= todo.text %>
-          <%= todo.complete %>
-          <%= todo.due_on %>
-        </td>
+        <td><%= todo.text %></td>
+        <td><%= todo.complete %></td>
+        <td><%= todo.due_on %></td>
         <td>
           <%= link_to 'Show', todo_path(todo), :class => 'btn btn-default pull-right' %>
           <%= link_to 'Edit', edit_todo_path(todo) %>
