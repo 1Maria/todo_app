@@ -3,13 +3,13 @@
 one:
   text: Water plants
   complete: no
-  order: 1
+  row_order: 1
   due_on: 2015-03-01
   user_id: 2
 
 two:
   text: Make dinner
   complete: yes
-  order: 1
+  row_order: 1
   due_on: 2015-03-02
   user_id: 1

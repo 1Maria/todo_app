@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150301204226) do
   create_table "todos", force: :cascade do |t|
     t.text     "text"
     t.string   "complete"
-    t.integer  "order"
+    t.integer  "row_order"
     t.date     "due_on"
     t.integer  "user_id"
     t.datetime "created_at", null: false

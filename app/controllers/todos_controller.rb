@@ -31,6 +31,14 @@ class TodosController < ApplicationController
     end
   end
 
+  def update_row_order
+    @todo = Todo.find(todo_params[:todo_id])
+    @todo.row_order_position = todo_params[:row_order_position]
+    @todo.save
+
+    render nothing: true
+  end
+
   def edit
   end
 
@@ -43,7 +51,7 @@ class TodosController < ApplicationController
   end
 
   def index
-    @todos = Todo.all
+    @todos = Todo.rank(:row_order).all
   end
 
   def show
@@ -55,7 +63,7 @@ class TodosController < ApplicationController
     end
 
     def todo_params
-      params.require(:todo).permit(:text, :complete, :order,
+      params.require(:todo).permit(:todo_id, :text, :complete, :row_order_position,
                                  :due_on, :user_id)
     end
 end
