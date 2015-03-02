@@ -1,0 +1,64 @@
+/* forms */
+/* line 4, /Users/mhome/TIY_winter/homework/todo_app/app/assets/stylesheets/custom.css.scss */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* line 11, /Users/mhome/TIY_winter/homework/todo_app/app/assets/stylesheets/custom.css.scss */
+input {
+  height: auto !important;
+}
+
+/* line 15, /Users/mhome/TIY_winter/homework/todo_app/app/assets/stylesheets/custom.css.scss */
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+/* line 18, /Users/mhome/TIY_winter/homework/todo_app/app/assets/stylesheets/custom.css.scss */
+.checkbox span {
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+/* line 24, /Users/mhome/TIY_winter/homework/todo_app/app/assets/stylesheets/custom.css.scss */
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
+/* line 29, /Users/mhome/TIY_winter/homework/todo_app/app/assets/stylesheets/custom.css.scss */
+.users {
+  list-style: none;
+  margin: 0;
+}
+/* line 32, /Users/mhome/TIY_winter/homework/todo_app/app/assets/stylesheets/custom.css.scss */
+.users li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid gray-lighter;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+body {
+  background-color: #C6A8EF;
+}

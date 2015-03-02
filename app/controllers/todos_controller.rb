@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-  # before_action :set_todo, only: [:show, :edit, :update, :destroy]
+  before_action :set_todo, only: [:show, :edit, :update, :destroy]
   # before_action :user, except: [:show]
 
   def new
@@ -7,7 +7,7 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = Todo.new(params[:todo])
+    @todo = Todo.new(todo_params)
     respond_to do |format|
       if @todo.save
         format.html { redirect_to @todo, notice: 'Todo was successfully created.' }
